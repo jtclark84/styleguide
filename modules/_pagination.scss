@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #PAGINATION
+\*------------------------------------*/
+
+/**
+ * This is to override bootstraps specifity of pagiation. Normally this
+ * level of nesting would not be allowed.
+ */
+ .pagination-secondary li a {
+     @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+ }
+
+ .pagination-subtle li a {
+     @include button-variant($btn-subtle-color, $btn-subtle-bg, $btn-subtle-border);
+ }
+
+
+ .pagination-prev:before,
+ .pagination-next:after,
+ .pager-prev:before,
+ .pager-next:after {
+     font-size: 20px;
+ }
+
+ .pager-prev:before,
+ .pagination-prev:before {
+     content: "\2190";
+     margin-right: 0.4em;
+ }
+
+ .pager-next:after,
+ .pagination-next:after {
+     content: "\2192";
+     margin-left: 0.4em;
+ }
